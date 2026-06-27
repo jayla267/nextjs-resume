@@ -1,0 +1,106 @@
+export default function Home() {
+  return (
+    <main className="max-w-3xl mx-auto px-6 py-12 bg-white text-gray-800 min-h-screen shadow-lg my-8 rounded-lg border border-gray-100">
+      
+      {/* HEADER / CONTACT INFO */}
+      <header className="border-b border-gray-200 pb-6 mb-8">
+        <h1 className="text-4xl font-bold text-gray-900 tracking-tight mb-2">Jayla Jeffery</h1>
+        <p className="text-lg text-gray-600 mb-4">Business Analytics and Information Systems Student</p>
+        <div className="flex flex-wrap gap-4 text-sm text-gray-500">
+          <a href="mailto:jaylaj@usf.edu" className="hover:text-blue-600 transition-colors">jaylaj@usf.edu</a>
+          <span>•</span>
+          <a href="https://github.com/jayla267" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">github.com/jayla267</a>
+        </div>
+      </header>
+
+      {/* SUMMARY */}
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold text-gray-900 uppercase tracking-wide mb-3">Professional Summary</h2>
+        <p className="text-gray-700 leading-relaxed">
+          Current Business Analytics and Information Systems Senior at the University of South Florida, expecting to graduate in December 2026. Hands-on experience with programs such as JavaScript, Python, SQL, and GitHub. I also have previous experience with customer relations, and the management of operational tasks. I’m seeking internships related to my field.
+        </p>
+      </section>
+
+      {/* EDUCATION */}
+      <section className="mb-8 border-t border-gray-200 pt-6">
+        <h2 className="text-xl font-semibold text-gray-900 uppercase tracking-wide mb-4">Education</h2>
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+          <div>
+            <h3 className="text-base font-bold text-gray-800">Bachelor of Science in Business Analytics and Information Systems</h3>
+            <p className="text-gray-600">University of South Florida</p>
+            <p className="text-sm text-gray-500 mt-1">Overall GPA: 3.2</p>
+          </div>
+          <p className="text-sm text-gray-500 font-medium mt-1 sm:mt-0">Expected Graduation: December 2026</p>
+        </div>
+        <div className="mt-3">
+          <p className="text-sm text-gray-600"><span className="font-semibold">Relevant Coursework:</span> Business Application Development, Database Design & Management, Web Development, Network Communication.</p>
+        </div>
+      </section>
+
+      {/* TECHNICAL SKILLS */}
+      <section className="mb-8 border-t border-gray-200 pt-6">
+        <h2 className="text-xl font-semibold text-gray-900 uppercase tracking-wide mb-4">Technical Skills</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+          <div>
+            <p className="text-gray-700"><span className="font-bold text-gray-800">Languages & Tools:</span> JavaScript, Python, SQL, GitHub, Tableau</p>
+          </div>
+          <div>
+            <p className="text-gray-700"><span className="font-bold text-gray-800">Software & Applications:</span> Microsoft Excel, Microsoft Word, Microsoft Powerpoint</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ACADEMIC PROJECTS */}
+      <section className="mb-8 border-t border-gray-200 pt-6">
+        <h2 className="text-xl font-semibold text-gray-900 uppercase tracking-wide mb-4">Academic Projects</h2>
+        
+        <div className="mb-6">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+            <h3 className="text-base font-bold text-gray-800">Dynamic Small Business Landing Page</h3>
+            <span className="text-sm text-gray-500 font-medium">June 2026</span>
+          </div>
+          <p className="text-sm text-gray-600 mb-2"><span className="font-semibold">Technologies:</span> HTML5, CSS3 (Flexbox/Grid), JavaScript (DOM Manipulation)</p>
+          <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>Created a fully responsive landing page with dynamic content updates using event listeners.</li>
+            <li>Optimized layout architectures with the use of programs such as CSS Flexbox and Grid for full viewing access on standard desktop and mobile viewports.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+            <h3 className="text-base font-bold text-gray-800">Travel Consulting Database System</h3>
+            <span className="text-sm text-gray-500 font-medium">May 2026</span>
+          </div>
+          <p className="text-sm text-gray-600 mb-2"><span className="font-semibold">Technologies:</span> SQL, Relational Database Systems, ERD Modeling</p>
+          <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>Developed a comprehensive database schema resolving complex business rules and many-to-many operational structures.</li>
+            <li>Created clean SQL scripts to establish entities and optimized queries.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* WORK EXPERIENCE */}
+      <section className="mb-8 border-t border-gray-200 pt-6">
+        <h2 className="text-xl font-semibold text-gray-900 uppercase tracking-wide mb-4">Work Experience</h2>
+        <div>
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+            <h3 className="text-base font-bold text-gray-800">Cashier</h3>
+            <span className="text-sm text-gray-500 font-medium">April 2021 – March 2022</span>
+          </div>
+          <p className="text-gray-600 text-sm mb-2">JCPenney’s — Tampa, Florida</p>
+          <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>Enrolled customers for company store credit cards by communicating benefits effectively.</li>
+            <li>Managed cash registers, successfully processed payments and organized currency before and after store operation hours.</li>
+            <li>Maintained store presentation standards by efficiently stocking and organizing merchandise shelves.</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-gray-200 pt-6 mt-12 text-center text-xs text-gray-400">
+        <p>© {new Date().getFullYear()} Jayla Jeffery. Built with Next.js and Tailwind CSS.</p>
+      </footer>
+
+    </main>
+  );
+}
