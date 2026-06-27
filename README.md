@@ -1,9 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Resume Project By Jayla Jeffery
 
-## Getting Started
+An interactive, dynamic resume website built using Next.js, featuring a clean layout and responsive design elements.
 
-First, run the development server:
+## How to Run Locally
 
+Follow these steps to run the development server on your machine:
+
+1. **Install dependencies:**
+   ```bash
+   npm install
 ```bash
 npm run dev
 # or
